@@ -71,7 +71,7 @@ if (iswbtcck) {
 }
 if ($.isNode()) {
     if (process.env.wbtcURL && process.env.wbtcURL.indexOf('#') > -1) {
-        wbtcurl = process.env.wbtcURL.split('#');
+        wbtcurl = process.env.wbtcURL;
         console.log(`您选择的是用"#"隔开\n`)
     }
     else if (process.env.wbtcURL && process.env.wbtcURL.indexOf('\n') > -1) {
