@@ -26,9 +26,8 @@ jobs:
         run: |
           npm install
       - name: '运行 【five_city】'
-        if: env.YOUTH_HEADER
         run: |
-          node youth.js
+          node 58.js
         env:
           YOUTH_NOTIFY_CONTROL: ${{ secrets.YOUTH_NOTIFY_CONTROL }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
