@@ -102,10 +102,10 @@ if ($.isNode()) {
     }
 }
 !(async () => {
-    if (!wbtcurlArr[0] && !wbtcArr[0]) {
-        $.msg($.name, '【提示】请先获取58同城一cookie')
-        return;
-    }
+    //if (!wbtcurlArr[0] && !wbtcArr[0]) {
+        //$.msg($.name, '【提示】请先获取58同城一cookie')
+        //return;
+    //}
     console.log(`------------- 共${wbtcArr.length}个账号----------------\n`)
     for (let i = 0; i < wbtcArr.length; i++) {
         if (wbtcArr[i]) {
