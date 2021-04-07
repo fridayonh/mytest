@@ -107,11 +107,11 @@ if ($.isNode()) {
         //return;
     //}
     console.log(`------------- 共${wbtcArr.length}个账号----------------\n`)
-    for (let i = 0; i < wbtcArr.length; i++) {
-        if (wbtcArr[i]) {
+    for (let i = 0; i < 1; i++) {
+        if (1) {
             message = ''
-            wbtcurl = wbtcurlArr[i];
-            wbtc = wbtcArr[i];
+            wbtcurl = process.env.wbtc;
+            wbtc = process.env.wbtc;
             $.index = i + 1;
             console.log(`\n开始【58同城${$.index}】`)
             await detailinfo()  //早起列表
