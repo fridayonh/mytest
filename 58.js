@@ -97,8 +97,8 @@ if ($.isNode()) {
     wbtcArr.push(wbtc)
     let wbtccount = ('1');
     for (let i = 2; i <= wbtccount; i++) {
-        wbtcurlArr.push(wbtc${i})
-        wbtcArr.push(wbtc${i}))
+        wbtcurlArr.push(wbtc)
+        wbtcArr.push(wbtc)
     }
 }
 !(async () => {
