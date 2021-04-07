@@ -46,7 +46,7 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 let status, day3, treeLevel, taskConfigId, treeID, sessionID,treesignType,treesignID;
 let ks1, ks2, ks3, ks4, ks5, ksId1, ksId2, ksId3, ksId4, ksId5, ksId6, ksId7, ksId8
 let ore = 0.1;
-status = (status = ($.getval("wbtcstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
+status = (status = ("1")) > 1 ? `${status}` : ""; // 账号扩展字符
 const wbtcurlArr = [], wbtcArr = []
 let wbtc = process.env.wbtc
 let zsheader = process.env.zsheader
