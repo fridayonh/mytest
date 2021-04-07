@@ -48,10 +48,10 @@ let ks1, ks2, ks3, ks4, ks5, ksId1, ksId2, ksId3, ksId4, ksId5, ksId6, ksId7, ks
 let ore = 0.1;
 status = (status = ($.getval("wbtcstatus") || "1")) > 1 ? `${status}` : ""; // 账号扩展字符
 const wbtcurlArr = [], wbtcArr = []
-let wbtc = $.getdata('wbtc')
-let zsheader = $.getdata('zsheader')
-let zjheader = $.getdata('zjheader')
-let dzpheader = $.getdata('dzpheader')
+let wbtc = process.env.wbtc
+let zsheader = process.env.zsheader
+let zjheader = process.env.zjheader
+let dzpheader = process.env.dzpheader
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
 const logs = 0;//0为关闭日志，1为开启
 var hour = ''
@@ -94,7 +94,7 @@ if ($.isNode()) {
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
 } else {
     wbtcurlArr.push($.getdata('wbtcurl'))
-    wbtcArr.push($.getdata('wbtc'))
+    wbtcArr.push(wbtc)
     let wbtccount = ($.getval('wbtccount') || '1');
     for (let i = 2; i <= wbtccount; i++) {
         wbtcurlArr.push($.getdata(`wbtcurl${i}`))
