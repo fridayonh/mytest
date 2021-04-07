@@ -93,12 +93,12 @@ if ($.isNode()) {
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
 } else {
-    wbtcurlArr.push($.getdata('wbtcurl'))
+    wbtcurlArr.push(wbtc)
     wbtcArr.push(wbtc)
-    let wbtccount = ($.getval('wbtccount') || '1');
+    let wbtccount = ('1');
     for (let i = 2; i <= wbtccount; i++) {
-        wbtcurlArr.push($.getdata(`wbtcurl${i}`))
-        wbtcArr.push($.getdata(`wbtc${i}`))
+        wbtcurlArr.push(wbtc${i})
+        wbtcArr.push(wbtc${i}))
     }
 }
 !(async () => {
